@@ -5,7 +5,7 @@ import { ChevronRightIcon } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 z-50 flex w-full items-center justify-between bg-white px-32 py-4 shadow">
+    <div className="fixed top-0 z-50 flex w-full max-w-screen-2xl items-center justify-between bg-white px-8 py-4 shadow md:px-16 lg:px-24 xl:px-32">
       <div className="flex items-center gap-3">
         <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
         <div>
@@ -13,7 +13,7 @@ const Navbar = () => {
           <p className="text-secondary text-xs tracking-[5px]">FOUNDATION</p>
         </div>
       </div>
-      <div className="flex items-center gap-8">
+      <div className="hidden items-center gap-8 md:flex">
         <ul className="flex items-center gap-8 font-medium">
           <li>
             <Link href="/">Home</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
           href="/donate"
           className="bg-primary group flex items-center gap-1 rounded px-4 py-2 font-semibold text-white"
         >
-          Donate
+          Donate Now
           <ChevronRightIcon
             size={20}
             strokeWidth={2}

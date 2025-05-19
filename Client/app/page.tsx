@@ -13,7 +13,9 @@ const Home = () => {
       <Hero />
       <About />
       <Steps />
-      <Services />
+      <div className="hidden md:block">
+        <Services />
+      </div>
       <Activity />
       <Video />
       <Blogs />

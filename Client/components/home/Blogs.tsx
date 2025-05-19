@@ -30,12 +30,12 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="px-32 py-20">
+    <div className="px-8 py-10 md:px-16 md:py-20 lg:px-24 xl:px-32">
       <div className="flex flex-col items-center">
-        <h3 className="flex items-center gap-2 text-lg text-[#B7B7A4]">
+        <h3 className="flex items-center gap-2 text-[#B7B7A4] md:text-lg">
           NEWS <span className="inline-block h-[1px] w-8 bg-[#B7B7A4]"></span>
         </h3>
-        <h1 className="text-blueish max-w-sm text-4xl font-bold">
+        <h1 className="text-blueish max-w-sm text-2xl font-bold sm:text-3xl md:text-4xl">
           Latest Updates
         </h1>
         <p className="mt-5 max-w-md text-center text-zinc-500">

@@ -5,18 +5,18 @@ import Image from "next/image";
 
 const Activity = () => {
   return (
-    <div className="pt-20">
-      <div className="relative flex gap-20 px-32">
+    <div className="pt-10 md:pt-20">
+      <div className="relative flex flex-col gap-10 px-8 md:flex-row md:gap-20 md:px-16 lg:px-24 xl:px-32">
         <div className="absolute top-0 left-0 -z-10 flex h-full w-full flex-col">
           <div className="h-3/5 w-full bg-white"></div>
           <div className="bg-blueish h-2/5 w-full"></div>
         </div>
-        <div className="flex w-3/5 flex-col gap-4 pb-20">
+        <div className="flex w-full flex-col gap-4 md:w-3/5 md:pb-20">
           <h3 className="flex items-center gap-2 text-lg text-[#B7B7A4]">
             ACTIVITY{" "}
             <span className="inline-block h-[1px] w-8 bg-[#B7B7A4]"></span>
           </h3>
-          <h1 className="text-blueish max-w-sm text-4xl font-bold">
+          <h1 className="text-blueish max-w-sm text-2xl font-bold sm:text-3xl md:text-4xl">
             You Can Help by Donating
           </h1>
           <p className="text-zinc-500">
@@ -40,12 +40,12 @@ const Activity = () => {
               className="transition-all duration-300 group-hover:translate-x-1"
             />
           </Link>
-          <div className="mt-10 grid grid-cols-2 gap-4">
+          <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
             <div className="h-96 bg-zinc-300"></div>
             <div className="h-96 bg-zinc-300"></div>
           </div>
         </div>
-        <div className="w-2/5 pt-20">
+        <div className="w-full md:w-2/5 md:pt-20">
           <Image
             src="/images/placeholder.png"
             alt="activity"
@@ -55,8 +55,8 @@ const Activity = () => {
           />
         </div>
       </div>
-      <div className="px-32">
-        <div className="bg-primary flex items-center justify-center gap-20 rounded-b-2xl p-10">
+      <div className="px-8 md:px-16 lg:px-24 xl:px-32">
+        <div className="bg-primary flex flex-col items-center justify-center gap-20 rounded-b-2xl p-10 md:flex-row">
           <div className="flex flex-col items-center justify-center text-white">
             <h2 className="text-5xl font-extrabold">7350</h2>
             <p className="mt-2">Donations Made</p>
