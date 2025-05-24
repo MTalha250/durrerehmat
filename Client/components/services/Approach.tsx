@@ -61,11 +61,11 @@ const Approach = () => {
         </div>
         <div className="relative">
           <Image
-            src="/images/placeholder.png"
+            src="/images/approach.jpg"
             alt="Our Approach"
             width={500}
             height={400}
-            className="w-full rounded-md"
+            className="max-h-[50vh] w-full rounded-md object-cover object-top"
           />
         </div>
       </div>
