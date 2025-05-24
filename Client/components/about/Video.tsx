@@ -4,7 +4,13 @@ import React from "react";
 const Video = () => {
   return (
     <div className="flex flex-col gap-10 px-8 py-10 md:flex-row md:gap-20 md:px-0 md:pr-16 lg:pr-24 xl:pr-32">
-      <div className="h-[50vh] w-full bg-zinc-300 md:w-1/2"></div>
+      <div className="h-[50vh] w-full md:w-1/2">
+        <video
+          src="/images/about-video.mp4"
+          className="h-full w-full rounded-md object-cover"
+          controls
+        />
+      </div>
       <div className="w-full space-y-4 md:w-1/2">
         <h3 className="flex items-center gap-2 text-[#B7B7A4] md:text-lg">
           <span className="bg-primary inline-block h-2 w-2 rounded-full" />

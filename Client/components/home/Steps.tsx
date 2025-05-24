@@ -9,8 +9,8 @@ const Steps = () => {
         <div className="h-full w-full bg-[#F6F4F3]"></div>
       </div>
       <div className="h-[50vh] w-full md:w-1/2">
-        <img
-          src="/images/placeholder.png"
+        <Image
+          src="/images/steps.jpg"
           alt="steps"
           width={500}
           height={500}

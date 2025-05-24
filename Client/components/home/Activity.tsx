@@ -71,7 +71,7 @@ const Activity = () => {
         </div>
         <div className="w-full md:w-1/2 md:pt-20 lg:w-2/5">
           <Image
-            src="/images/placeholder.png"
+            src="/images/activity.jpg"
             alt="activity"
             width={500}
             height={500}

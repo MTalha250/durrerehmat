@@ -15,7 +15,7 @@ const Home = () => {
         subTitle="About Us"
         title="Education for every children"
         description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero voluptatibus quia reprehenderit maxime, amet quidem ipsa expedita obcaecati sed magni velit fugiat pariatur nam nesciunt quasi delectus cumque. Fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quasi a nemo id voluptatibus minus ipsum quidem beatae non animi dolores cumque, soluta iste suscipit vero ducimus nihil possimus maxime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, eum. Laboriosam voluptates quos voluptate nobis alias ad sit non corrupti,"
-        image="/images/placeholder.png"
+        image="/images/about.jpg"
         quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
       />
       <Steps />

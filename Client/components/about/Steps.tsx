@@ -16,7 +16,7 @@ const Steps = () => {
           </h1>
         </div>
         <Image
-          src="/images/placeholder.png"
+          src="/images/about-steps.jpg"
           alt="steps"
           width={500}
           height={500}

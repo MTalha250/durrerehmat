@@ -29,7 +29,7 @@ const About = ({ subTitle, title, description, image, quote }: AboutProps) => {
           alt="About Image"
           width={500}
           height={350}
-          className="w-full rounded-md object-cover"
+          className="max-h-[50vh] w-full object-cover"
         />
         {quote && (
           <div className="mt-10 flex items-center gap-10">
