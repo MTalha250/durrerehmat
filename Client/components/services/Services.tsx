@@ -93,7 +93,7 @@ const Services = () => {
     },
   ];
   return (
-    <div className="bg-[#F6F4F3] px-8 py-20 md:px-16 lg:px-24 xl:px-32">
+    <div className="bg-[#F6F4F3] px-8 py-10 md:px-16 lg:px-24 xl:px-32">
       <div className="mb-16 text-center">
         <h3 className="flex items-center justify-center gap-2 text-lg text-[#B7B7A4]">
           <span className="bg-primary inline-block h-2 w-2 rounded-full" />

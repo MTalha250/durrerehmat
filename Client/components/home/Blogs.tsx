@@ -90,7 +90,7 @@ const Blogs = () => {
   ];
 
   return (
-    <div className="px-8 py-10 md:px-16 md:py-20 lg:px-24 xl:px-32">
+    <div className="px-8 py-10 md:px-16 lg:px-24 xl:px-32">
       <div className="flex flex-col items-center">
         <h3 className="flex items-center gap-2 text-[#B7B7A4] md:text-lg">
           <span className="bg-primary inline-block h-2 w-2 rounded-full" />

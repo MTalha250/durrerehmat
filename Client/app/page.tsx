@@ -19,9 +19,7 @@ const Home = () => {
         quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
       />
       <Steps />
-      <div className="hidden md:block">
-        <Services />
-      </div>
+      <Services />
       <Activity />
       <Video />
       <Blogs />

@@ -17,10 +17,10 @@ const Steps = () => {
           className="h-full w-full object-cover"
         />
       </div>
-      <div className="bg-greenish w-full px-4 py-10 md:w-1/2 md:px-16">
+      <div className="bg-greenish w-full px-4 py-10 md:w-1/2 md:px-8 lg:px-16">
         <h3 className="flex items-center gap-2 text-[#B7B7A4] md:text-lg">
           <span className="bg-primary inline-block h-2 w-2 rounded-full" />
-          YOUR DONATION HELPS{" "}
+          DONATION{" "}
           <span className="inline-block h-[1px] w-8 bg-[#B7B7A4]"></span>
         </h3>
         <h1 className="text-2xl font-bold text-white sm:text-3xl md:text-4xl">

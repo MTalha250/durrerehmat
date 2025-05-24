@@ -8,7 +8,7 @@ const Impact = () => {
     { number: "200+", label: "Volunteers" },
   ];
   return (
-    <div className="bg-primary py-20">
+    <div className="bg-primary py-10">
       <div className="px-8 md:px-16 lg:px-24 xl:px-32">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-white">Our Impact</h2>

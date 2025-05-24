@@ -9,7 +9,7 @@ import { ChevronRight } from "lucide-react";
 const ContactForm = () => {
   return (
     <div className="flex flex-col md:flex-row">
-      <div className="w-full py-10 pr-8 pl-8 md:w-[55%] md:py-20 md:pl-16 lg:pl-24 xl:pl-32">
+      <div className="w-full py-10 pr-8 pl-8 md:w-[55%] md:pl-16 lg:pl-24 xl:pl-32">
         <h3 className="flex items-center gap-2 text-lg text-[#B7B7A4]">
           <span className="bg-primary inline-block h-2 w-2 rounded-full" />
           Contact{" "}
@@ -73,7 +73,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#F6F4F3] py-10 pr-8 md:w-[45%] md:py-20 md:pr-16 lg:pr-24 xl:pr-32">
+      <div className="w-full bg-[#F6F4F3] py-10 pr-8 md:w-[45%] md:pr-16 lg:pr-24 xl:pr-32">
         <div className="bg-secondary max-w-md space-y-5 p-10 text-white">
           <h2 className="text-2xl font-bold">
             If You Have Any Questions, Contact Us

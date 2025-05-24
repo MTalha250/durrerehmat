@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Steps = () => {
   return (
-    <div className="flex flex-col px-8 py-10 md:flex-row md:px-16 md:py-20 lg:px-24 xl:px-32">
+    <div className="flex flex-col px-8 py-10 md:flex-row md:px-16 lg:px-24 xl:px-32">
       <div className="h-fit w-full md:w-1/2">
         <div className="bg-primary px-4 py-10 md:px-16">
           <h3 className="flex items-center gap-2 text-[#babab0] md:text-lg">

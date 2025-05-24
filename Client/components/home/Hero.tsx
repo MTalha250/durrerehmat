@@ -23,7 +23,7 @@ const Hero = () => {
               DURRE-E-REHMAT{" "}
               <span className="inline-block h-[1px] w-8 bg-[#B7B7A4]"></span>
             </h3>
-            <h1 className="text-4xl font-extrabold sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl font-extrabold sm:text-5xl lg:text-6xl">
               Is a non-profit organization
             </h1>
             <p className="text-lg">
@@ -37,8 +37,8 @@ const Hero = () => {
             </Link>
           </div>
         </div>
-        <div className="absolute bottom-0 z-20 hidden w-full translate-y-1/2 items-center justify-center gap-10 md:flex">
-          <div className="flex h-fit w-72 flex-col items-center justify-center rounded-md bg-white p-8 text-center shadow-lg">
+        <div className="absolute bottom-0 z-20 hidden w-full translate-y-1/2 items-center justify-center gap-8 px-8 md:flex lg:gap-10">
+          <div className="flex h-fit w-72 flex-col items-center justify-center rounded-md bg-white p-5 text-center shadow-lg lg:p-8">
             <div className="mb-4 rounded-xl bg-[#F5F7F2] p-4">
               <Image
                 src="/images/hero-icon1.png"
@@ -48,13 +48,13 @@ const Hero = () => {
                 className="object-cover"
               />
             </div>
-            <h2 className="text-3xl font-extrabold">BECOME</h2>
-            <h3 className="mb-2 text-xl font-medium">a volunteer</h3>
+            <h2 className="text-2xl font-extrabold lg:text-3xl">BECOME</h2>
+            <h3 className="mb-2 text-lg font-medium lg:text-xl">a volunteer</h3>
             <p className="text-sm font-light">
               We are looking for volunteers to help us with our mission.
             </p>
           </div>
-          <div className="bg-secondary flex h-fit w-72 flex-col items-center justify-center rounded-md p-8 text-center text-white shadow-lg">
+          <div className="bg-secondary flex h-fit w-72 flex-col items-center justify-center rounded-md p-5 text-center text-white shadow-lg lg:p-8">
             <div className="mb-4 rounded-xl bg-[#89C3B6] p-4">
               <Image
                 src="/images/hero-icon2.png"
@@ -64,14 +64,14 @@ const Hero = () => {
                 className="object-cover"
               />
             </div>
-            <h2 className="text-3xl font-extrabold">GET</h2>
-            <h3 className="mb-2 text-xl font-medium">involved</h3>
+            <h2 className="text-2xl font-extrabold lg:text-3xl">GET</h2>
+            <h3 className="mb-2 text-lg font-medium lg:text-xl">involved</h3>
             <p className="text-sm font-light">
               We are looking for volunteers to help us with our mission. We are
               looking for volunteers to help us with our mission.
             </p>
           </div>
-          <div className="flex h-fit w-72 flex-col items-center justify-center rounded-md bg-white p-8 text-center shadow-lg">
+          <div className="flex h-fit w-72 flex-col items-center justify-center rounded-md bg-white p-5 text-center shadow-lg lg:p-8">
             <div className="mb-4 rounded-xl bg-[#F5F7F2] p-4">
               <Image
                 src="/images/hero-icon3.png"
@@ -81,8 +81,8 @@ const Hero = () => {
                 className="object-cover"
               />
             </div>
-            <h2 className="text-3xl font-extrabold">SPREAD</h2>
-            <h3 className="mb-2 text-xl font-medium">the word</h3>
+            <h2 className="text-2xl font-extrabold lg:text-3xl">SPREAD</h2>
+            <h3 className="mb-2 text-lg font-medium lg:text-xl">the word</h3>
             <p className="text-sm font-light">
               We are looking for volunteers to help us with our mission.
             </p>

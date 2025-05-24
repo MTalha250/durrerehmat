@@ -7,12 +7,12 @@ import FundraiserCard from "../cards/FundraiserCard";
 const Activity = () => {
   return (
     <div className="">
-      <div className="relative flex flex-col gap-10 px-8 md:flex-row md:gap-20 md:px-16 lg:px-24 xl:px-32">
+      <div className="relative flex flex-col gap-10 px-8 md:flex-row md:px-16 lg:gap-20 lg:px-24 xl:px-32">
         <div className="absolute top-0 left-0 -z-10 flex h-full w-full flex-col">
           <div className="h-3/5 w-full bg-[#F6F4F3]"></div>
           <div className="bg-blueish h-2/5 w-full"></div>
         </div>
-        <div className="flex w-full flex-col gap-4 py-10 md:w-3/5 md:py-20">
+        <div className="flex w-full flex-col gap-4 py-10 md:w-1/2 lg:w-3/5">
           <h3 className="flex items-center gap-2 text-lg text-[#B7B7A4]">
             <span className="bg-primary inline-block h-2 w-2 rounded-full" />
             ACTIVITY{" "}
@@ -42,7 +42,7 @@ const Activity = () => {
               className="transition-all duration-300 group-hover:translate-x-1"
             />
           </Link>
-          <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
             <FundraiserCard
               _id="1"
               title="Test Fundraiser"
@@ -69,7 +69,7 @@ const Activity = () => {
             />
           </div>
         </div>
-        <div className="w-full md:w-2/5 md:pt-20">
+        <div className="w-full md:w-1/2 md:pt-20 lg:w-2/5">
           <Image
             src="/images/placeholder.png"
             alt="activity"
@@ -80,21 +80,21 @@ const Activity = () => {
         </div>
       </div>
       <div className="px-8 pb-10 md:px-16 md:pb-20 lg:px-24 xl:px-32">
-        <div className="bg-primary flex flex-col items-center justify-center gap-20 rounded-b-2xl p-10 md:flex-row">
+        <div className="bg-primary flex flex-col items-center justify-center gap-10 rounded-b-2xl p-10 md:flex-row lg:gap-20">
           <div className="flex flex-col items-center justify-center text-white">
-            <h2 className="text-5xl font-extrabold">7350</h2>
+            <h2 className="text-4xl font-extrabold lg:text-5xl">7350</h2>
             <p className="mt-2">Donations Made</p>
           </div>
           <div className="flex flex-col items-center justify-center text-white">
-            <h2 className="text-5xl font-extrabold">7350</h2>
+            <h2 className="text-4xl font-extrabold lg:text-5xl">7350</h2>
             <p className="mt-2">Donations Made</p>
           </div>
           <div className="flex flex-col items-center justify-center text-white">
-            <h2 className="text-5xl font-extrabold">7350</h2>
+            <h2 className="text-4xl font-extrabold lg:text-5xl">7350</h2>
             <p className="mt-2">Donations Made</p>
           </div>
           <div className="flex flex-col items-center justify-center text-white">
-            <h2 className="text-5xl font-extrabold">7350</h2>
+            <h2 className="text-4xl font-extrabold lg:text-5xl">7350</h2>
             <p className="mt-2">Donations Made</p>
           </div>
         </div>

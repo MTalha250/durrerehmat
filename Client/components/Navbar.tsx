@@ -144,7 +144,7 @@ const Navbar = () => {
             <Link
               href="/donate"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="from-primary to-primary/80 mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r px-6 py-3 font-semibold text-white shadow-lg transition-all duration-300 hover:shadow-xl"
+              className="from-primary to-primary/80 mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r px-6 py-3 font-semibold text-white transition-all duration-300"
             >
               Donate Now
               <ChevronRightIcon size={18} strokeWidth={2} />
