@@ -78,6 +78,7 @@ const Services = () => {
       <div className="mb-10 flex items-center justify-between px-32">
         <div>
           <h3 className="flex items-center gap-2 text-lg text-[#B7B7A4]">
+            <span className="bg-primary inline-block h-2 w-2 rounded-full" />
             OUR WORK{" "}
             <span className="inline-block h-[1px] w-8 bg-[#B7B7A4]"></span>
           </h3>

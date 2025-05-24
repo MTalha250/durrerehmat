@@ -2,17 +2,19 @@ import React from "react";
 import Link from "next/link";
 import { ChevronRightIcon } from "lucide-react";
 import Image from "next/image";
+import FundraiserCard from "../cards/FundraiserCard";
 
 const Activity = () => {
   return (
-    <div className="pt-10 md:pt-20">
+    <div className="">
       <div className="relative flex flex-col gap-10 px-8 md:flex-row md:gap-20 md:px-16 lg:px-24 xl:px-32">
         <div className="absolute top-0 left-0 -z-10 flex h-full w-full flex-col">
-          <div className="h-3/5 w-full bg-white"></div>
+          <div className="h-3/5 w-full bg-[#F6F4F3]"></div>
           <div className="bg-blueish h-2/5 w-full"></div>
         </div>
-        <div className="flex w-full flex-col gap-4 md:w-3/5 md:pb-20">
+        <div className="flex w-full flex-col gap-4 py-10 md:w-3/5 md:py-20">
           <h3 className="flex items-center gap-2 text-lg text-[#B7B7A4]">
+            <span className="bg-primary inline-block h-2 w-2 rounded-full" />
             ACTIVITY{" "}
             <span className="inline-block h-[1px] w-8 bg-[#B7B7A4]"></span>
           </h3>
@@ -41,8 +43,30 @@ const Activity = () => {
             />
           </Link>
           <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
-            <div className="h-96 bg-zinc-300"></div>
-            <div className="h-96 bg-zinc-300"></div>
+            <FundraiserCard
+              _id="1"
+              title="Test Fundraiser"
+              description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae id reprehenderit illo, ab ipsam aperiam laborum voluptatibus impedit voluptatum eveniet accusamus dolore, soluta quaerat! Excepturi sed nostrum pariatur qui autem."
+              category="general"
+              image="/images/placeholder.png"
+              totalAmount={1000}
+              amountRaised={500}
+              status="pending"
+              createdAt="1-10-2024"
+              updatedAt="1-10-2024"
+            />
+            <FundraiserCard
+              _id="1"
+              title="Test Fundraiser"
+              description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae id reprehenderit illo, ab ipsam aperiam laborum voluptatibus impedit voluptatum eveniet accusamus dolore, soluta quaerat! Excepturi sed nostrum pariatur qui autem."
+              category="general"
+              image="/images/placeholder.png"
+              totalAmount={1000}
+              amountRaised={500}
+              status="pending"
+              createdAt="1-10-2024"
+              updatedAt="1-10-2024"
+            />
           </div>
         </div>
         <div className="w-full md:w-2/5 md:pt-20">
@@ -55,7 +79,7 @@ const Activity = () => {
           />
         </div>
       </div>
-      <div className="px-8 md:px-16 lg:px-24 xl:px-32">
+      <div className="px-8 pb-10 md:px-16 md:pb-20 lg:px-24 xl:px-32">
         <div className="bg-primary flex flex-col items-center justify-center gap-20 rounded-b-2xl p-10 md:flex-row">
           <div className="flex flex-col items-center justify-center text-white">
             <h2 className="text-5xl font-extrabold">7350</h2>

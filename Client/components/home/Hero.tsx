@@ -8,17 +8,18 @@ const Hero = () => {
       <div className="relative h-[80vh] w-full">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-bg.jpg"
+            src="/images/hero.png"
             alt="Hero Background"
             fill
             className="object-cover"
             priority
           />
         </div>
-        <div className="absolute inset-0 z-10 h-full w-full bg-gradient-to-r from-black/50 to-black/0" />
+        <div className="absolute inset-0 z-10 h-full w-full bg-black/50" />
         <div className="relative z-20 flex h-full w-full items-center px-8 text-white md:px-16 lg:px-24 xl:px-32">
           <div className="max-w-lg space-y-4">
             <h3 className="flex items-center gap-2 text-lg text-[#B7B7A4]">
+              <span className="bg-primary inline-block h-2 w-2 rounded-full" />
               DURRE-E-REHMAT{" "}
               <span className="inline-block h-[1px] w-8 bg-[#B7B7A4]"></span>
             </h3>

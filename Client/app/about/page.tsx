@@ -1,32 +1,26 @@
+import Hero from "@/components/common/Hero";
 import About from "@/components/home/About";
-import Hero from "@/components/home/Hero";
-import Services from "@/components/home/Services";
-import Steps from "@/components/home/Steps";
 import Activity from "@/components/home/Activity";
-import React from "react";
-import Video from "@/components/home/Video";
-import Blogs from "@/components/home/Blogs";
+import Steps from "@/components/about/Steps";
+import Video from "@/components/about/Video";
 
-const Home = () => {
+import React from "react";
+
+const AboutPage = () => {
   return (
     <div>
-      <Hero />
+      <Hero title="About Us" img="/images/hero.png" />
       <About
         subTitle="About Us"
-        title="Education for every children"
+        title="We are a team of experienced professionals"
         description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero voluptatibus quia reprehenderit maxime, amet quidem ipsa expedita obcaecati sed magni velit fugiat pariatur nam nesciunt quasi delectus cumque. Fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quasi a nemo id voluptatibus minus ipsum quidem beatae non animi dolores cumque, soluta iste suscipit vero ducimus nihil possimus maxime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, eum. Laboriosam voluptates quos voluptate nobis alias ad sit non corrupti,"
         image="/images/placeholder.png"
-        quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
       />
       <Steps />
-      <div className="hidden md:block">
-        <Services />
-      </div>
-      <Activity />
       <Video />
-      <Blogs />
+      <Activity />
     </div>
   );
 };
 
-export default Home;
+export default AboutPage;
