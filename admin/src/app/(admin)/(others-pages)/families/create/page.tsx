@@ -213,7 +213,7 @@ const CreateFamily = () => {
                   <h3 className="text-lg font-medium text-gray-800 dark:text-white">
                     Children With Us
                   </h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">
                     Add details of children currently in orphanage care
                   </p>
                 </div>
