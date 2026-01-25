@@ -203,7 +203,7 @@ const Families = () => {
               <>
                 <div className="max-w-full overflow-x-auto">
                   <Table>
-                    <TableHeader className="border-b border-gray-100 dark:border-white/[0.05]">
+                    <TableHeader className="border-b border-gray-100 dark:border-white/[0.05] whitespace-nowrap">
                       <TableRow>
                         <TableCell isHeader className="px-5 py-3 font-medium text-gray-500 text-start text-theme-xs dark:text-gray-400">
                           Guardian

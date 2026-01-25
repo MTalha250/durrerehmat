@@ -273,8 +273,8 @@ const EditFamily = () => {
 
             {/* Children Section */}
             <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
-              <div className="flex items-center justify-between mb-4">
-                <div>
+              <div className="flex items-center flex-wrap justify-between mb-4">
+                <div className="w-full md:w-auto">
                   <h3 className="text-lg font-medium text-gray-800 dark:text-white">
                     Children With Us
                   </h3>
