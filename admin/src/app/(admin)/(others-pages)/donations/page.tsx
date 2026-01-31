@@ -265,33 +265,33 @@ const Donations = () => {
       {/* Detail Modal */}
       <Modal isOpen={isOpen} onClose={closeModal} className="max-w-2xl">
         {selectedDonation && (
-          <div className="p-6">
-            <h2 className="text-xl font-semibold mb-4">Donation Details</h2>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div><p className="text-sm text-gray-500">Name</p><p className="font-medium">{selectedDonation.name}</p></div>
-              <div><p className="text-sm text-gray-500">Email</p><p className="font-medium">{selectedDonation.email}</p></div>
-              <div><p className="text-sm text-gray-500">Phone</p><p className="font-medium">{selectedDonation.phone}</p></div>
-              <div><p className="text-sm text-gray-500">Address</p><p className="font-medium">{selectedDonation.address}</p></div>
-              <div><p className="text-sm text-gray-500">Donation Type</p><Badge color={getDonationTypeColor(selectedDonation.donationType) as any}>{selectedDonation.donationType}</Badge></div>
-              <div><p className="text-sm text-gray-500">Amount</p><p className="font-medium">{selectedDonation.amount > 0 ? `PKR ${selectedDonation.amount.toLocaleString()}` : "Not specified"}</p></div>
+          <div className="p-4 sm:p-6">
+            <h2 className="text-lg sm:text-xl font-semibold mb-4 pr-8 text-gray-800 dark:text-white">Donation Details</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
+              <div><p className="text-xs sm:text-sm text-gray-500">Name</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedDonation.name}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Email</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white break-all">{selectedDonation.email}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Phone</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedDonation.phone}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Address</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedDonation.address}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Donation Type</p><Badge color={getDonationTypeColor(selectedDonation.donationType) as any}>{selectedDonation.donationType}</Badge></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Amount</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedDonation.amount > 0 ? `PKR ${selectedDonation.amount.toLocaleString()}` : "Not specified"}</p></div>
             </div>
 
             {selectedDonation.donationType === "In-kind" && selectedDonation.inKindDetails && (
               <div className="mb-4">
-                <p className="text-sm text-gray-500 mb-2">In-Kind Donation Details</p>
-                <p className="bg-gray-50 dark:bg-gray-800 p-3 rounded-lg text-gray-700 dark:text-gray-300">
+                <p className="text-xs sm:text-sm text-gray-500 mb-2">In-Kind Donation Details</p>
+                <p className="bg-gray-50 dark:bg-gray-800 p-2.5 sm:p-3 rounded-lg text-sm text-gray-700 dark:text-gray-300">
                   {selectedDonation.inKindDetails}
                 </p>
               </div>
             )}
 
             {selectedDonation.interestedInFundraiser && (
-              <div className="mb-4 p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
-                <p className="flex items-center gap-2 text-orange-700 dark:text-orange-400 font-medium mb-2">
+              <div className="mb-4 p-3 sm:p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg border border-orange-200 dark:border-orange-800">
+                <p className="flex items-center gap-2 text-orange-700 dark:text-orange-400 font-medium mb-2 text-sm sm:text-base">
                   <Flag className="w-4 h-4" /> Interested in Starting a Fundraiser
                 </p>
                 {selectedDonation.fundraiserDetails && (
-                  <p className="text-gray-700 dark:text-gray-300">{selectedDonation.fundraiserDetails}</p>
+                  <p className="text-sm text-gray-700 dark:text-gray-300">{selectedDonation.fundraiserDetails}</p>
                 )}
               </div>
             )}

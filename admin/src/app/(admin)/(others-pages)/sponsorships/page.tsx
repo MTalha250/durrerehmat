@@ -250,39 +250,39 @@ const Sponsorships = () => {
       {/* Detail Modal */}
       <Modal isOpen={isOpen} onClose={closeModal} className="max-w-2xl">
         {selectedSponsorship && (
-          <div className="p-6">
-            <h2 className="text-xl font-semibold mb-4">Sponsorship Details</h2>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div><p className="text-sm text-gray-500">Full Name</p><p className="font-medium">{selectedSponsorship.fullName}</p></div>
-              <div><p className="text-sm text-gray-500">Email</p><p className="font-medium">{selectedSponsorship.email}</p></div>
-              <div><p className="text-sm text-gray-500">Phone</p><p className="font-medium">{selectedSponsorship.phone}</p></div>
-              <div><p className="text-sm text-gray-500">Address</p><p className="font-medium">{selectedSponsorship.address}</p></div>
-              <div><p className="text-sm text-gray-500">Profession</p><p className="font-medium">{selectedSponsorship.profession}</p></div>
-              <div><p className="text-sm text-gray-500">Gender / Age</p><p className="font-medium">{selectedSponsorship.gender}, {selectedSponsorship.age} years</p></div>
-              <div><p className="text-sm text-gray-500">Child Name</p><p className="font-medium">{selectedSponsorship.childName}</p></div>
-              <div><p className="text-sm text-gray-500">Sponsorship Type</p><Badge color={selectedSponsorship.sponsorshipType === "Comprehensive" ? "success" : "info"}>{selectedSponsorship.sponsorshipType}</Badge></div>
+          <div className="p-4 sm:p-6">
+            <h2 className="text-lg sm:text-xl font-semibold mb-4 pr-8 text-gray-800 dark:text-white">Sponsorship Details</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
+              <div><p className="text-xs sm:text-sm text-gray-500">Full Name</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedSponsorship.fullName}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Email</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white break-all">{selectedSponsorship.email}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Phone</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedSponsorship.phone}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Address</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedSponsorship.address}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Profession</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedSponsorship.profession}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Gender / Age</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedSponsorship.gender}, {selectedSponsorship.age} years</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Child Name</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedSponsorship.childName}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Sponsorship Type</p><Badge color={selectedSponsorship.sponsorshipType === "Comprehensive" ? "success" : "info"}>{selectedSponsorship.sponsorshipType}</Badge></div>
             </div>
             {selectedSponsorship.partialCategories.length > 0 && (
               <div className="mb-4">
-                <p className="text-sm text-gray-500 mb-2">Selected Categories</p>
-                <div className="flex gap-2">{selectedSponsorship.partialCategories.map((cat) => <Badge key={cat} color="primary">{cat}</Badge>)}</div>
+                <p className="text-xs sm:text-sm text-gray-500 mb-2">Selected Categories</p>
+                <div className="flex flex-wrap gap-2">{selectedSponsorship.partialCategories.map((cat) => <Badge key={cat} color="primary">{cat}</Badge>)}</div>
               </div>
             )}
             {selectedSponsorship.selectedItems.length > 0 && (
               <div className="mb-4">
-                <p className="text-sm text-gray-500 mb-2">Selected Items</p>
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3 space-y-2">
+                <p className="text-xs sm:text-sm text-gray-500 mb-2">Selected Items</p>
+                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-2.5 sm:p-3 space-y-2">
                   {selectedSponsorship.selectedItems.map((item, i) => (
-                    <div key={i} className="flex justify-between text-sm">
-                      <span>{item.itemName} ({item.category})</span>
-                      <span className="font-medium">PKR {item.price} {item.unit}</span>
+                    <div key={i} className="flex justify-between text-xs sm:text-sm">
+                      <span className="text-gray-700 dark:text-gray-300">{item.itemName} ({item.category})</span>
+                      <span className="font-medium text-gray-800 dark:text-white">PKR {item.price} {item.unit}</span>
                     </div>
                   ))}
                 </div>
               </div>
             )}
             <div className="border-t pt-4">
-              <p className="text-lg font-semibold">Total Amount: PKR {selectedSponsorship.totalAmount.toLocaleString()}</p>
+              <p className="text-base sm:text-lg font-semibold text-gray-800 dark:text-white">Total Amount: PKR {selectedSponsorship.totalAmount.toLocaleString()}</p>
             </div>
           </div>
         )}

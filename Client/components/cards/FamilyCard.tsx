@@ -1,5 +1,6 @@
 import React from "react";
-import { Users, MapPin, Heart } from "lucide-react";
+import Link from "next/link";
+import { Users, MapPin, Heart, ArrowRight } from "lucide-react";
 
 interface FamilyCardProps {
   family: Family;
@@ -34,11 +35,14 @@ const FamilyCard = ({ family }: FamilyCardProps) => {
   };
 
   return (
-    <div className="overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:shadow-lg">
-      <div className="bg-primary/10 p-4">
+    <Link
+      href={`/families/${family._id}`}
+      className="group block overflow-hidden rounded-xl bg-white shadow-md transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+    >
+      <div className="bg-primary/10 p-4 transition-colors group-hover:bg-primary/15">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="bg-primary flex h-12 w-12 items-center justify-center rounded-full">
+            <div className="bg-primary flex h-12 w-12 items-center justify-center rounded-full transition-transform group-hover:scale-110">
               <Heart className="h-6 w-6 text-white" />
             </div>
             <div>
@@ -54,7 +58,7 @@ const FamilyCard = ({ family }: FamilyCardProps) => {
       </div>
 
       <div className="p-4">
-        <div className="mb-4 flex gap-2">
+        <div className="mb-4 flex flex-wrap gap-2">
           <span
             className={`rounded-full px-3 py-1 text-xs font-medium ${getStatusColor(family.fatherStatus)}`}
           >
@@ -80,7 +84,7 @@ const FamilyCard = ({ family }: FamilyCardProps) => {
               Children in our care:
             </h4>
             <div className="space-y-2">
-              {family.children.slice(0, 3).map((child, index) => (
+              {family.children.slice(0, 2).map((child, index) => (
                 <div
                   key={child._id || index}
                   className="flex items-center justify-between rounded-lg bg-gray-50 px-3 py-2"
@@ -91,16 +95,22 @@ const FamilyCard = ({ family }: FamilyCardProps) => {
                   </span>
                 </div>
               ))}
-              {family.children.length > 3 && (
+              {family.children.length > 2 && (
                 <p className="text-primary text-center text-sm font-medium">
-                  +{family.children.length - 3} more children
+                  +{family.children.length - 2} more children
                 </p>
               )}
             </div>
           </div>
         )}
+
+        {/* View Details Button */}
+        <div className="mt-4 flex items-center justify-center gap-2 rounded-lg bg-primary/5 py-2.5 text-sm font-semibold text-primary transition-colors group-hover:bg-primary group-hover:text-white">
+          View Family Details
+          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

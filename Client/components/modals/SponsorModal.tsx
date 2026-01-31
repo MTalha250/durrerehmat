@@ -305,16 +305,16 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
             <div key={s} className="flex flex-1 items-center">
               <div className="relative flex flex-col items-center">
                 <div
-                  className={`flex h-12 w-12 items-center justify-center rounded-2xl text-sm font-bold shadow-lg transition-all duration-300 ${
+                  className={`flex h-9 w-9 sm:h-12 sm:w-12 items-center justify-center rounded-xl sm:rounded-2xl text-xs sm:text-sm font-bold shadow-lg transition-all duration-300 ${
                     step >= s
                       ? "from-primary to-primary/80 shadow-primary/30 bg-gradient-to-br text-white"
                       : "bg-gray-100 text-gray-400"
                   }`}
                 >
-                  {step > s ? <Check className="h-5 w-5" /> : s}
+                  {step > s ? <Check className="h-4 w-4 sm:h-5 sm:w-5" /> : s}
                 </div>
                 <span
-                  className={`mt-2 text-xs font-medium ${
+                  className={`mt-1 sm:mt-2 text-[10px] sm:text-xs font-medium ${
                     step >= s ? "text-primary" : "text-gray-400"
                   }`}
                 >
@@ -322,7 +322,7 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
                 </span>
               </div>
               {s < 3 && (
-                <div className="mx-2 h-1 flex-1 overflow-hidden rounded-full bg-gray-100">
+                <div className="mx-1 sm:mx-2 h-1 flex-1 overflow-hidden rounded-full bg-gray-100">
                   <div
                     className={`from-primary to-primary/80 h-full bg-gradient-to-r transition-all duration-500 ${
                       step > s ? "w-full" : "w-0"
@@ -340,12 +340,12 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
         <div className="animate-fadeIn flex flex-col">
           {/* Scrollable content */}
           <div className="max-h-[50vh] overflow-y-auto pr-2">
-            <div className="from-primary/10 to-secondary/10 mb-4 rounded-2xl bg-gradient-to-r p-4">
-              <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-800">
-                <User className="text-primary h-5 w-5" />
+            <div className="from-primary/10 to-secondary/10 mb-4 rounded-xl sm:rounded-2xl bg-gradient-to-r p-3 sm:p-4">
+              <h3 className="flex items-center gap-2 text-base sm:text-lg font-semibold text-gray-800">
+                <User className="text-primary h-4 w-4 sm:h-5 sm:w-5" />
                 Select a child to sponsor
               </h3>
-              <p className="mt-1 text-sm text-gray-600">
+              <p className="mt-1 text-xs sm:text-sm text-gray-600">
                 Choose a child whose life you&apos;d like to transform
               </p>
             </div>
@@ -372,10 +372,10 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
                     }`}
                     style={{ animationDelay: `${index * 50}ms` }}
                   >
-                    <div className="flex items-start gap-4">
+                    <div className="flex items-start gap-3 sm:gap-4">
                       {/* Avatar */}
                       <div
-                        className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl text-xl font-bold transition-colors ${
+                        className={`flex h-10 w-10 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-lg sm:rounded-xl text-base sm:text-xl font-bold transition-colors ${
                           selectedChild?.childId === child.childId
                             ? "from-primary to-primary/80 bg-gradient-to-br text-white"
                             : "group-hover:bg-primary/10 group-hover:text-primary bg-gray-100 text-gray-500"
@@ -384,36 +384,36 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
                         {child.childName.charAt(0)}
                       </div>
 
-                      <div className="flex-1">
-                        <div className="flex items-start justify-between">
-                          <div>
-                            <h4 className="text-lg font-bold text-gray-800">
+                      <div className="flex-1 min-w-0">
+                        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1 sm:gap-2">
+                          <div className="min-w-0">
+                            <h4 className="text-base sm:text-lg font-bold text-gray-800 truncate">
                               {child.childName}
                             </h4>
-                            <div className="mt-1 flex flex-wrap items-center gap-3 text-sm text-gray-500">
+                            <div className="mt-0.5 sm:mt-1 flex flex-wrap items-center gap-2 sm:gap-3 text-xs sm:text-sm text-gray-500">
                               <span className="flex items-center gap-1">
-                                <Calendar className="h-3.5 w-3.5" />
-                                {calculateAge(child.dateOfBirth)} years
+                                <Calendar className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+                                {calculateAge(child.dateOfBirth)} yrs
                               </span>
                               <span className="flex items-center gap-1">
-                                <MapPin className="h-3.5 w-3.5" />
+                                <MapPin className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
                                 {child.city}
                               </span>
                             </div>
                           </div>
                           {child.sponsorshipStatus === "partial" && (
-                            <span className="rounded-full bg-gradient-to-r from-amber-400 to-orange-400 px-3 py-1 text-xs font-medium text-white shadow-sm">
-                              Partially Sponsored
+                            <span className="self-start rounded-full bg-gradient-to-r from-amber-400 to-orange-400 px-2 py-0.5 sm:px-3 sm:py-1 text-[10px] sm:text-xs font-medium text-white shadow-sm whitespace-nowrap">
+                              Partial
                             </span>
                           )}
                         </div>
 
-                        <p className="mt-1 text-xs text-gray-400">
+                        <p className="mt-0.5 sm:mt-1 text-[10px] sm:text-xs text-gray-400">
                           Guardian: {child.guardian}
                         </p>
 
                         {child.description && (
-                          <p className="mt-2 line-clamp-2 text-sm text-gray-600">
+                          <p className="mt-1 sm:mt-2 line-clamp-2 text-xs sm:text-sm text-gray-600 hidden sm:block">
                             {child.description}
                           </p>
                         )}
@@ -421,14 +421,14 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
 
                       {/* Selection indicator */}
                       <div
-                        className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full transition-all ${
+                        className={`flex h-5 w-5 sm:h-6 sm:w-6 shrink-0 items-center justify-center rounded-full transition-all ${
                           selectedChild?.childId === child.childId
                             ? "bg-primary text-white"
                             : "border-2 border-gray-200"
                         }`}
                       >
                         {selectedChild?.childId === child.childId && (
-                          <Check className="h-4 w-4" />
+                          <Check className="h-3 w-3 sm:h-4 sm:w-4" />
                         )}
                       </div>
                     </div>
@@ -448,14 +448,14 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
           </div>
 
           {/* Fixed button area */}
-          <div className="mt-6 flex shrink-0 justify-end border-t border-gray-100 pt-6">
+          <div className="mt-4 sm:mt-6 flex shrink-0 justify-end border-t border-gray-100 pt-4 sm:pt-6">
             <button
               onClick={() => setStep(2)}
               disabled={!selectedChild}
-              className="group from-primary to-primary/90 shadow-primary/30 hover:shadow-primary/40 flex items-center gap-2 rounded-xl bg-gradient-to-r px-8 py-3 font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50 disabled:shadow-none"
+              className="group from-primary to-primary/90 shadow-primary/30 hover:shadow-primary/40 flex items-center gap-2 rounded-xl bg-gradient-to-r px-5 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50 disabled:shadow-none"
             >
               Continue
-              <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
         </div>
@@ -467,19 +467,19 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
           {/* Scrollable content */}
           <div className="max-h-[50vh] overflow-y-auto pr-2">
             {/* Selected child info */}
-            <div className="from-primary/10 to-secondary/10 mb-6 flex items-center gap-3 rounded-2xl bg-gradient-to-r p-4">
-              <div className="from-primary to-primary/80 flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br text-lg font-bold text-white">
+            <div className="from-primary/10 to-secondary/10 mb-4 sm:mb-6 flex items-center gap-2.5 sm:gap-3 rounded-xl sm:rounded-2xl bg-gradient-to-r p-3 sm:p-4">
+              <div className="from-primary to-primary/80 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-lg sm:rounded-xl bg-gradient-to-br text-base sm:text-lg font-bold text-white">
                 {selectedChild?.childName.charAt(0)}
               </div>
               <div>
-                <p className="text-sm text-gray-500">Sponsoring</p>
-                <p className="font-bold text-gray-800">
+                <p className="text-xs sm:text-sm text-gray-500">Sponsoring</p>
+                <p className="text-sm sm:text-base font-bold text-gray-800">
                   {selectedChild?.childName}
                 </p>
               </div>
             </div>
 
-            <h3 className="mb-4 text-lg font-semibold text-gray-800">
+            <h3 className="mb-3 sm:mb-4 text-base sm:text-lg font-semibold text-gray-800">
               Choose Sponsorship Type
             </h3>
 
@@ -665,21 +665,21 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
           </div>
 
           {/* Fixed button area */}
-          <div className="mt-6 flex shrink-0 justify-between border-t border-gray-100 pt-6">
+          <div className="mt-4 sm:mt-6 flex shrink-0 justify-between gap-3 border-t border-gray-100 pt-4 sm:pt-6">
             <button
               onClick={() => setStep(1)}
-              className="group flex items-center gap-2 rounded-xl border-2 border-gray-200 px-6 py-3 font-semibold text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50"
+              className="group flex items-center gap-1.5 sm:gap-2 rounded-xl border-2 border-gray-200 px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50"
             >
-              <ChevronLeft className="h-5 w-5 transition-transform group-hover:-translate-x-1" />
+              <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:-translate-x-1" />
               Back
             </button>
             <button
               onClick={() => setStep(3)}
               disabled={!formData.sponsorshipType}
-              className="group from-primary to-primary/90 shadow-primary/30 hover:shadow-primary/40 flex items-center gap-2 rounded-xl bg-gradient-to-r px-8 py-3 font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50 disabled:shadow-none"
+              className="group from-primary to-primary/90 shadow-primary/30 hover:shadow-primary/40 flex items-center gap-1.5 sm:gap-2 rounded-xl bg-gradient-to-r px-5 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50 disabled:shadow-none"
             >
               Continue
-              <ChevronRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
+              <ChevronRight className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:translate-x-1" />
             </button>
           </div>
         </div>
@@ -690,12 +690,12 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
         <div className="animate-fadeIn flex flex-col">
           {/* Scrollable content */}
           <div className="max-h-[50vh] overflow-y-auto pr-2">
-            <div className="from-primary/10 to-secondary/10 mb-6 rounded-2xl bg-gradient-to-r p-4">
-              <h3 className="flex items-center gap-2 text-lg font-semibold text-gray-800">
-                <User className="text-primary h-5 w-5" />
+            <div className="from-primary/10 to-secondary/10 mb-4 sm:mb-6 rounded-xl sm:rounded-2xl bg-gradient-to-r p-3 sm:p-4">
+              <h3 className="flex items-center gap-2 text-base sm:text-lg font-semibold text-gray-800">
+                <User className="text-primary h-4 w-4 sm:h-5 sm:w-5" />
                 Your Information
               </h3>
-              <p className="mt-1 text-sm text-gray-600">
+              <p className="mt-1 text-xs sm:text-sm text-gray-600">
                 Please provide your details to complete the sponsorship
               </p>
             </div>
@@ -854,12 +854,12 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
           </div>
 
           {/* Fixed button area */}
-          <div className="mt-6 flex shrink-0 justify-between border-t border-gray-100 pt-6">
+          <div className="mt-4 sm:mt-6 flex shrink-0 justify-between gap-3 border-t border-gray-100 pt-4 sm:pt-6">
             <button
               onClick={() => setStep(2)}
-              className="group flex items-center gap-2 rounded-xl border-2 border-gray-200 px-6 py-3 font-semibold text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50"
+              className="group flex items-center gap-1.5 sm:gap-2 rounded-xl border-2 border-gray-200 px-4 py-2.5 sm:px-6 sm:py-3 text-sm sm:text-base font-semibold text-gray-700 transition-all hover:border-gray-300 hover:bg-gray-50"
             >
-              <ChevronLeft className="h-5 w-5 transition-transform group-hover:-translate-x-1" />
+              <ChevronLeft className="h-4 w-4 sm:h-5 sm:w-5 transition-transform group-hover:-translate-x-1" />
               Back
             </button>
             <button
@@ -874,17 +874,19 @@ const SponsorModal = ({ isOpen, onClose }: SponsorModalProps) => {
                 !formData.gender ||
                 !formData.age
               }
-              className="group from-primary to-primary/90 shadow-primary/30 hover:shadow-primary/40 flex items-center gap-2 rounded-xl bg-gradient-to-r px-8 py-3 font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50 disabled:shadow-none"
+              className="group from-primary to-primary/90 shadow-primary/30 hover:shadow-primary/40 flex items-center gap-1.5 sm:gap-2 rounded-xl bg-gradient-to-r px-4 py-2.5 sm:px-8 sm:py-3 text-sm sm:text-base font-semibold text-white shadow-lg transition-all hover:shadow-xl disabled:opacity-50 disabled:shadow-none"
             >
               {submitting ? (
                 <>
-                  <Loader2 className="h-5 w-5 animate-spin" />
-                  Submitting...
+                  <Loader2 className="h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
+                  <span className="hidden sm:inline">Submitting...</span>
+                  <span className="sm:hidden">Wait...</span>
                 </>
               ) : (
                 <>
-                  <Heart className="h-5 w-5" />
-                  Submit Sponsorship
+                  <Heart className="h-4 w-4 sm:h-5 sm:w-5" />
+                  <span className="hidden sm:inline">Submit Sponsorship</span>
+                  <span className="sm:hidden">Submit</span>
                 </>
               )}
             </button>

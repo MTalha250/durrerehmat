@@ -347,58 +347,58 @@ const Families = () => {
       {/* View Family Modal */}
       <Modal isOpen={isOpen} onClose={closeModal} className="max-w-2xl">
         {selectedFamily && (
-          <div className="p-6">
-            <h2 className="text-xl font-semibold text-gray-800 dark:text-white mb-4">
+          <div className="p-4 sm:p-6">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-800 dark:text-white mb-4 pr-8">
               Family Details
             </h2>
 
-            <div className="grid grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Guardian</p>
-                <p className="font-medium text-gray-800 dark:text-white">{selectedFamily.guardian}</p>
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Guardian</p>
+                <p className="font-medium text-gray-800 dark:text-white text-sm sm:text-base">{selectedFamily.guardian}</p>
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">City</p>
-                <p className="font-medium text-gray-800 dark:text-white">{selectedFamily.city}</p>
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">City</p>
+                <p className="font-medium text-gray-800 dark:text-white text-sm sm:text-base">{selectedFamily.city}</p>
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Father Status</p>
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Father Status</p>
                 <Badge color={getStatusColor(selectedFamily.fatherStatus)} size="sm">
                   {selectedFamily.fatherStatus}
                 </Badge>
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Mother Status</p>
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Mother Status</p>
                 <Badge color={getStatusColor(selectedFamily.motherStatus)} size="sm">
                   {selectedFamily.motherStatus}
                 </Badge>
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Total Children</p>
-                <p className="font-medium text-gray-800 dark:text-white">{selectedFamily.totalChildren}</p>
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Total Children</p>
+                <p className="font-medium text-gray-800 dark:text-white text-sm sm:text-base">{selectedFamily.totalChildren}</p>
               </div>
               <div>
-                <p className="text-sm text-gray-500 dark:text-gray-400">Children With Us</p>
-                <p className="font-medium text-gray-800 dark:text-white">{selectedFamily.children.length}</p>
+                <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">Children With Us</p>
+                <p className="font-medium text-gray-800 dark:text-white text-sm sm:text-base">{selectedFamily.children.length}</p>
               </div>
             </div>
 
             {selectedFamily.children.length > 0 && (
               <div className="mb-6">
-                <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-3">Children</h3>
-                <div className="space-y-3">
+                <h3 className="text-base sm:text-lg font-medium text-gray-800 dark:text-white mb-3">Children</h3>
+                <div className="space-y-2 sm:space-y-3">
                   {selectedFamily.children.map((child, index) => (
-                    <div key={child._id || index} className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                    <div key={child._id || index} className="p-2.5 sm:p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
                       <div className="flex justify-between items-start">
                         <div>
-                          <p className="font-medium text-gray-800 dark:text-white">{child.name}</p>
-                          <p className="text-sm text-gray-500 dark:text-gray-400">
+                          <p className="font-medium text-gray-800 dark:text-white text-sm sm:text-base">{child.name}</p>
+                          <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
                             Age: {calculateAge(child.dateOfBirth)} years
                           </p>
                         </div>
                       </div>
                       {child.description && (
-                        <p className="text-sm text-gray-600 dark:text-gray-300 mt-2">{child.description}</p>
+                        <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 mt-2">{child.description}</p>
                       )}
                     </div>
                   ))}
@@ -408,8 +408,8 @@ const Families = () => {
 
             {selectedFamily.note && (
               <div>
-                <h3 className="text-lg font-medium text-gray-800 dark:text-white mb-2">Note</h3>
-                <p className="text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800 p-3 rounded-lg">
+                <h3 className="text-base sm:text-lg font-medium text-gray-800 dark:text-white mb-2">Note</h3>
+                <p className="text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-gray-800 p-2.5 sm:p-3 rounded-lg">
                   {selectedFamily.note}
                 </p>
               </div>

@@ -245,21 +245,21 @@ const Volunteers = () => {
       {/* Detail Modal */}
       <Modal isOpen={isOpen} onClose={closeModal} className="max-w-2xl">
         {selectedVolunteer && (
-          <div className="p-6">
-            <h2 className="text-xl font-semibold mb-4">Volunteer Details</h2>
-            <div className="grid grid-cols-2 gap-4 mb-6">
-              <div><p className="text-sm text-gray-500">Full Name</p><p className="font-medium">{selectedVolunteer.fullName}</p></div>
-              <div><p className="text-sm text-gray-500">Email</p><p className="font-medium">{selectedVolunteer.email}</p></div>
-              <div><p className="text-sm text-gray-500">Phone</p><p className="font-medium">{selectedVolunteer.phone}</p></div>
-              <div><p className="text-sm text-gray-500">Address</p><p className="font-medium">{selectedVolunteer.address}</p></div>
-              <div><p className="text-sm text-gray-500">Profession</p><p className="font-medium">{selectedVolunteer.profession}</p></div>
-              <div><p className="text-sm text-gray-500">Gender / Age</p><p className="font-medium">{selectedVolunteer.gender}, {selectedVolunteer.age} years</p></div>
-              <div><p className="text-sm text-gray-500">Volunteer Type</p><Badge color={getVolunteerTypeColor(selectedVolunteer.volunteerType) as any}>{selectedVolunteer.volunteerType}</Badge></div>
-              <div><p className="text-sm text-gray-500">Status</p><Badge color={selectedVolunteer.status === "Approved" ? "success" : selectedVolunteer.status === "Pending" ? "warning" : "error"}>{selectedVolunteer.status}</Badge></div>
+          <div className="p-4 sm:p-6">
+            <h2 className="text-lg sm:text-xl font-semibold mb-4 pr-8 text-gray-800 dark:text-white">Volunteer Details</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6">
+              <div><p className="text-xs sm:text-sm text-gray-500">Full Name</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedVolunteer.fullName}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Email</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white break-all">{selectedVolunteer.email}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Phone</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedVolunteer.phone}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Address</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedVolunteer.address}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Profession</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedVolunteer.profession}</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Gender / Age</p><p className="font-medium text-sm sm:text-base text-gray-800 dark:text-white">{selectedVolunteer.gender}, {selectedVolunteer.age} years</p></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Volunteer Type</p><Badge color={getVolunteerTypeColor(selectedVolunteer.volunteerType) as any}>{selectedVolunteer.volunteerType}</Badge></div>
+              <div><p className="text-xs sm:text-sm text-gray-500">Status</p><Badge color={selectedVolunteer.status === "Approved" ? "success" : selectedVolunteer.status === "Pending" ? "warning" : "error"}>{selectedVolunteer.status}</Badge></div>
             </div>
             <div>
-              <p className="text-sm text-gray-500 mb-2">Reason for Interest</p>
-              <p className="bg-gray-50 dark:bg-gray-800 p-3 rounded-lg text-gray-700 dark:text-gray-300">
+              <p className="text-xs sm:text-sm text-gray-500 mb-2">Reason for Interest</p>
+              <p className="bg-gray-50 dark:bg-gray-800 p-2.5 sm:p-3 rounded-lg text-sm text-gray-700 dark:text-gray-300">
                 {selectedVolunteer.reasonForInterest}
               </p>
             </div>
