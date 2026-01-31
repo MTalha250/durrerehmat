@@ -157,3 +157,72 @@ export const getCities = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+// Public endpoints (no authentication required)
+export const getPublicFamilies = async (req, res) => {
+  const { page = 1, limit = 12, city } = req.query;
+  try {
+    let filters = {};
+    if (city) {
+      filters.city = { $regex: city, $options: "i" };
+    }
+
+    const totalFamilies = await Family.countDocuments(filters);
+    const skip = (parseInt(page) - 1) * parseInt(limit);
+    const families = await Family.find(filters)
+      .select("-note") // Exclude private notes from public view
+      .sort({ createdAt: -1 })
+      .skip(skip)
+      .limit(parseInt(limit));
+
+    res.status(200).json({
+      families,
+      currentPage: parseInt(page),
+      totalPages: Math.ceil(totalFamilies / parseInt(limit)),
+      totalFamilies,
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+export const getPublicFamily = async (req, res) => {
+  const { id } = req.params;
+  try {
+    const family = await Family.findById(id).select("-note");
+    if (!family) return res.status(404).json({ message: "Family not found" });
+    res.status(200).json({ family });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+export const getPublicCities = async (req, res) => {
+  try {
+    const cities = await Family.find().distinct("city");
+    res.json({ cities });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+export const getFamilyStats = async (req, res) => {
+  try {
+    const familyCount = await Family.countDocuments();
+    const childrenResult = await Family.aggregate([
+      { $unwind: "$children" },
+      { $count: "totalChildren" },
+    ]);
+    const totalChildren = childrenResult.length > 0 ? childrenResult[0].totalChildren : 0;
+
+    const citiesCount = (await Family.find().distinct("city")).length;
+
+    res.status(200).json({
+      totalFamilies: familyCount,
+      totalChildren,
+      totalCities: citiesCount,
+    });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};

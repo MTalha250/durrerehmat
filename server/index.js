@@ -6,6 +6,10 @@ import dotenv from "dotenv";
 import adminRoutes from "./routes/admin.js";
 import dashboardStatsRoutes from "./routes/dashboardStats.js";
 import familyRoutes from "./routes/family.js";
+import rateListRoutes from "./routes/rateList.js";
+import sponsorshipRoutes from "./routes/sponsorship.js";
+import volunteerRoutes from "./routes/volunteer.js";
+import donationRoutes from "./routes/donation.js";
 
 dotenv.config();
 
@@ -44,6 +48,10 @@ app.get("/", (req, res) => {
 app.use("/api/admin", adminRoutes);
 app.use("/api/dashboard", dashboardStatsRoutes);
 app.use("/api/family", familyRoutes);
+app.use("/api/rate-list", rateListRoutes);
+app.use("/api/sponsorship", sponsorshipRoutes);
+app.use("/api/volunteer", volunteerRoutes);
+app.use("/api/donation", donationRoutes);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

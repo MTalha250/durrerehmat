@@ -6,6 +6,7 @@ import Activity from "@/components/home/Activity";
 import React from "react";
 import Video from "@/components/home/Video";
 import Blogs from "@/components/home/Blogs";
+import FeaturedFamilies from "@/components/families/FeaturedFamilies";
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       />
       <Steps />
       <Services />
+      <FeaturedFamilies />
       <Activity />
       <Video />
       <Blogs />

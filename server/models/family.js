@@ -14,6 +14,17 @@ const childSchema = new mongoose.Schema({
     type: String,
     default: "",
   },
+  // Sponsorship tracking
+  sponsorshipStatus: {
+    type: String,
+    default: "none",
+    enum: ["none", "partial", "full"],
+  },
+  sponsoredCategories: {
+    type: [String],
+    default: [],
+    enum: ["Food", "Education", "Medical", "Accessories"],
+  },
 });
 
 const familySchema = new mongoose.Schema(
