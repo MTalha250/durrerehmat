@@ -10,6 +10,7 @@ import rateListRoutes from "./routes/rateList.js";
 import sponsorshipRoutes from "./routes/sponsorship.js";
 import volunteerRoutes from "./routes/volunteer.js";
 import donationRoutes from "./routes/donation.js";
+import contactRoutes from "./routes/contact.js";
 
 dotenv.config();
 
@@ -52,6 +53,7 @@ app.use("/api/rate-list", rateListRoutes);
 app.use("/api/sponsorship", sponsorshipRoutes);
 app.use("/api/volunteer", volunteerRoutes);
 app.use("/api/donation", donationRoutes);
+app.use("/api/contact", contactRoutes);
 
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () => {

@@ -2,10 +2,10 @@ import React from "react";
 
 const Impact = () => {
   const impactStats = [
-    { number: "15,000+", label: "Children Educated" },
-    { number: "5,000+", label: "Families Helped" },
-    { number: "50+", label: "Communities Served" },
-    { number: "200+", label: "Volunteers" },
+    { number: "50", label: "Orphaned Daughters" },
+    { number: "55", label: "Individuals in Care" },
+    { number: "2021", label: "Year Founded" },
+    { number: "24/7", label: "Care & Supervision" },
   ];
   return (
     <div className="bg-primary py-10">

@@ -2,6 +2,7 @@ import Family from "../models/family.js";
 import Sponsorship from "../models/sponsorship.js";
 import Volunteer from "../models/volunteer.js";
 import Donation from "../models/donation.js";
+import Contact from "../models/contact.js";
 
 export const getDashboardStats = async (req, res) => {
   try {
@@ -37,6 +38,10 @@ export const getDashboardStats = async (req, res) => {
     const totalDonationAmount =
       donationAmountResult.length > 0 ? donationAmountResult[0].total : 0;
 
+    // Contact counts
+    const totalContacts = await Contact.countDocuments();
+    const pendingContacts = await Contact.countDocuments({ status: "Pending" });
+
     res.status(200).json({
       familyCount,
       totalChildren,
@@ -50,6 +55,8 @@ export const getDashboardStats = async (req, res) => {
       totalDonations,
       pendingDonations,
       totalDonationAmount,
+      totalContacts,
+      pendingContacts,
     });
   } catch (error) {
     res.status(500).json({ message: error.message });

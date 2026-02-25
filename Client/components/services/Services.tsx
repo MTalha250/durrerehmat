@@ -15,14 +15,27 @@ const Services = () => {
   const mainServices = [
     {
       icon: <BookOpen className="h-8 w-8" />,
-      title: "Education & Learning",
+      title: "Religious Education",
       description:
-        "Providing quality education and learning opportunities for children from underprivileged communities. We believe every child deserves access to knowledge.",
+        "Providing comprehensive Islamic education including Quran studies, Islamic history, and moral values to nurture strong faith and character in our girls.",
       features: [
-        "Primary Education",
-        "Adult Literacy Programs",
-        "Skill Development",
-        "Digital Learning",
+        "Quran Recitation & Memorization",
+        "Islamic Studies",
+        "Moral & Character Building",
+        "Religious Degree Courses",
+      ],
+      image: "/images/placeholder.png",
+    },
+    {
+      icon: <GraduationCap className="h-8 w-8" />,
+      title: "Secular Education",
+      description:
+        "Our in-house school provides quality secular education at all levels, enabling girls to excel academically and pursue higher education at external institutions.",
+      features: [
+        "Primary & Secondary Education",
+        "In-House Schooling",
+        "Higher Education Funding",
+        "Day-Scholar Programme",
       ],
       image: "/images/placeholder.png",
     },
@@ -30,12 +43,12 @@ const Services = () => {
       icon: <Heart className="h-8 w-8" />,
       title: "Healthcare Services",
       description:
-        "Delivering essential healthcare services and medical support to communities in need. Health is a fundamental right for everyone.",
+        "Ensuring the health and well-being of all girls through regular medical check-ups, vaccinations, and access to emergency medical care when needed.",
       features: [
-        "Medical Camps",
-        "Vaccination Programs",
-        "Health Awareness",
-        "Emergency Care",
+        "Regular Health Check-ups",
+        "Vaccination Programmes",
+        "Emergency Medical Care",
+        "Mental Health Support",
       ],
       image: "/images/placeholder.png",
     },
@@ -43,51 +56,38 @@ const Services = () => {
       icon: <Utensils className="h-8 w-8" />,
       title: "Food & Nutrition",
       description:
-        "Fighting hunger and malnutrition by providing nutritious meals and food security programs for families and children.",
+        "Providing three nutritious meals daily along with snacks, ensuring every girl receives balanced nutrition essential for their physical growth and development.",
       features: [
-        "Meal Programs",
-        "Food Distribution",
-        "Nutrition Education",
-        "Community Kitchens",
+        "Three Daily Meals",
+        "Balanced Nutrition",
+        "Special Diet Needs",
+        "Dining Hall Facility",
       ],
       image: "/images/placeholder.png",
     },
     {
       icon: <Home className="h-8 w-8" />,
-      title: "Housing & Shelter",
+      title: "Residential Care",
       description:
-        "Building homes and providing safe shelter for homeless families and individuals, creating stable foundations for better lives.",
+        "A safe and nurturing residential environment with 24/7 care and supervision by experienced mother-maids who attend to the girls' day-to-day needs.",
       features: [
-        "Emergency Shelter",
-        "Home Construction",
-        "Rehabilitation",
-        "Safe Spaces",
+        "24/7 Care & Supervision",
+        "Girl Dormitories",
+        "Recreation Area",
+        "Experienced Mother-Maids",
       ],
       image: "/images/placeholder.png",
     },
     {
       icon: <Users className="h-8 w-8" />,
-      title: "Community Development",
+      title: "Skills Development",
       description:
-        "Empowering communities through sustainable development programs that create lasting positive change and self-reliance.",
+        "Equipping girls with practical life skills and vocational training to help them become self-sufficient and make a positive contribution to Pakistani society.",
       features: [
-        "Leadership Training",
-        "Economic Development",
-        "Women Empowerment",
-        "Youth Programs",
-      ],
-      image: "/images/placeholder.png",
-    },
-    {
-      icon: <GraduationCap className="h-8 w-8" />,
-      title: "Vocational Training",
-      description:
-        "Equipping individuals with practical skills and vocational training to help them secure sustainable employment and build careers.",
-      features: [
-        "Technical Skills",
-        "Certification Programs",
-        "Job Placement",
-        "Entrepreneurship Support",
+        "Life Skills Training",
+        "Vocational Courses",
+        "Social Development",
+        "Community Integration",
       ],
       image: "/images/placeholder.png",
     },
@@ -102,8 +102,8 @@ const Services = () => {
         </h3>
         <h1 className="text-blueish text-4xl font-bold">Our Core Services</h1>
         <p className="mx-auto mt-4 max-w-2xl text-zinc-600">
-          We provide comprehensive services designed to address the fundamental
-          needs of communities and create lasting positive impact.
+          We provide comprehensive care designed to nurture orphan girls into
+          self-sufficient, confident, and well-rounded members of society.
         </p>
       </div>
 

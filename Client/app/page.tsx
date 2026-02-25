@@ -14,15 +14,15 @@ const Home = () => {
       <Hero />
       <About
         subTitle="About Us"
-        title="Education for every children"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci vero voluptatibus quia reprehenderit maxime, amet quidem ipsa expedita obcaecati sed magni velit fugiat pariatur nam nesciunt quasi delectus cumque. Fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quasi a nemo id voluptatibus minus ipsum quidem beatae non animi dolores cumque, soluta iste suscipit vero ducimus nihil possimus maxime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, eum. Laboriosam voluptates quos voluptate nobis alias ad sit non corrupti,"
+        title="Caring for Orphan Girls in Lahore"
+        description="The principal purpose of Durr-e-Rehmat Girls Orphanage is to care for orphan girls in a residential setting in Lahore. The orphanage's key aim is that all programme activities and interventions always put the best interests of the child first and foremost by promoting and protecting their well-being. We are responsible for their upbringing, health, education, social development, general welfare, training and skills development so that they can become self-sufficient and useful members of their community."
         image="/images/about.jpg"
-        quote="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos."
+        quote="Every orphan girl deserves a chance to grow, learn, and become a confident member of society."
       />
-      <Steps />
+      <Activity />
       <Services />
       <FeaturedFamilies />
-      <Activity />
+      <Steps />
       <Video />
       <Blogs />
     </div>

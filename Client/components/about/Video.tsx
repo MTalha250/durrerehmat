@@ -21,18 +21,19 @@ const Video = () => {
           Helping Hands for Everyone
         </h1>
         <p className="text-zinc-500 sm:text-lg">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          vero voluptatibus quia reprehenderit maxime, amet quidem ipsa expedita
-          obcaecati sed magni velit fugiat pariatur nam nesciunt quasi delectus
-          cumque. Fugiat. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Alias quasi a nemo id voluptatibus minus ipsum quidem beatae non
-          animi dolores cumque, soluta iste suscipit vero ducimus nihil possimus
-          maxime.
+          Our girls are under 24-hour care and supervision of experienced
+          mother-maids who look after their day-to-day needs. The in-house
+          school provides both religious and secular education at all levels.
+          Girls who are academically capable are funded for higher education in
+          religious and secular degree courses at external institutions. The
+          residential facilities include dormitories, staff accommodation, a
+          teaching block, dining hall, and a recreation area.
         </p>
         <div className="mt-10 flex items-center gap-10">
           <Image src="/images/comma.png" alt="comma" width={50} height={50} />
           <p className="font-bold sm:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+            Every orphan girl deserves a chance to grow, learn, and become a
+            confident member of society.
           </p>
         </div>
       </div>

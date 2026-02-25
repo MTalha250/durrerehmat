@@ -21,11 +21,11 @@ const Approach = () => {
               </div>
               <div>
                 <h4 className="mb-2 text-lg font-semibold">
-                  Identify Community Needs
+                  Rescue & Admit
                 </h4>
                 <p className="text-zinc-600">
-                  We work closely with communities to understand their specific
-                  challenges and priorities.
+                  We identify orphan girls from Lahore and surrounding districts
+                  who need residential care and support.
                 </p>
               </div>
             </div>
@@ -35,11 +35,11 @@ const Approach = () => {
               </div>
               <div>
                 <h4 className="mb-2 text-lg font-semibold">
-                  Develop Targeted Solutions
+                  Nurture & Educate
                 </h4>
                 <p className="text-zinc-600">
-                  Our team creates customized programs and services to address
-                  identified needs effectively.
+                  Girls receive 24/7 care from experienced mother-maids along
+                  with in-house religious and secular education at all levels.
                 </p>
               </div>
             </div>
@@ -49,11 +49,11 @@ const Approach = () => {
               </div>
               <div>
                 <h4 className="mb-2 text-lg font-semibold">
-                  Implement & Monitor
+                  Empower & Develop
                 </h4>
                 <p className="text-zinc-600">
-                  We execute our programs with continuous monitoring to ensure
-                  maximum impact and sustainability.
+                  We equip girls with life skills and fund higher education for
+                  those academically capable, building self-sufficient young women.
                 </p>
               </div>
             </div>

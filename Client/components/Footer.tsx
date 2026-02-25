@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -23,19 +23,16 @@ const Footer = () => {
             <h3 className="mb-6 text-xl font-bold sm:text-2xl">About</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/career">Career</Link>
+                <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/angel-investor">Angel Investor</Link>
+                <Link href="/families">Our Families</Link>
               </li>
               <li>
-                <Link href="/terms">Terms of Service</Link>
+                <Link href="/donate">Donate</Link>
               </li>
               <li>
-                <Link href="/legal">Legal Information</Link>
-              </li>
-              <li>
-                <Link href="/credits">Credits</Link>
+                <Link href="/services">Our Services</Link>
               </li>
             </ul>
           </div>
@@ -52,7 +49,7 @@ const Footer = () => {
                 <Link href="/about">About Us</Link>
               </li>
               <li>
-                <Link href="/news">News</Link>
+                <Link href="/donate">Donate</Link>
               </li>
               <li>
                 <Link href="/contact">Contact Us</Link>
@@ -64,47 +61,31 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <span className="mr-2">📍</span>
-                <span>021 Hollywood Boulevard, Los Angeles</span>
+                <span>513-B Canal View Housing Society, Multan Road, Lahore</span>
               </li>
               <li className="flex items-center">
                 <span className="mr-2">✉️</span>
-                <span>info@yourdomain.com</span>
+                <span>durrerehmatfoundation@gmail.com</span>
               </li>
               <li className="flex items-center">
                 <span className="mr-2">📞</span>
-                <span>(021) 345-6789</span>
+                <span>+92 319 4032268</span>
               </li>
             </ul>
           </div>
         </div>
         <div className="mt-12 flex flex-col items-center justify-between border-t border-gray-700 pt-8 md:flex-row">
           <p className="text-center text-sm sm:text-base md:text-left">
-            © 2025 Durr-e-Rehmat Foundation. All rights reserved.
+            © {new Date().getFullYear()} Durr-e-Rehmat Foundation (Registered). All rights reserved.
           </p>
           <div className="mt-4 flex space-x-4 text-black md:mt-0">
             <a
-              href="#"
+              href="https://www.facebook.com/p/Durr-e-Rehmat-61550893370194/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-full bg-[#8FBEB2] p-2 hover:bg-[#8FBEB2]/80"
             >
               <FaFacebookF className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="rounded-full bg-[#8FBEB2] p-2 hover:bg-[#8FBEB2]/80"
-            >
-              <FaTwitter className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="rounded-full bg-[#8FBEB2] p-2 hover:bg-[#8FBEB2]/80"
-            >
-              <FaInstagram className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
-              className="rounded-full bg-[#8FBEB2] p-2 hover:bg-[#8FBEB2]/80"
-            >
-              <FaYoutube className="h-5 w-5" />
             </a>
           </div>
         </div>

@@ -13,10 +13,10 @@ const ServicesPage = () => {
       <Hero title="Our Services" img="/images/hero.png" />
       <About
         subTitle="Our Services"
-        title="Making a Difference Through Action"
-        description="At Durre-e-Rehmat Foundation, we are committed to creating positive change in communities across the region. Our comprehensive range of services addresses the most pressing needs of society, from education and healthcare to food security and housing. We believe in holistic development that empowers individuals and strengthens communities for a better tomorrow."
+        title="Caring for Orphan Girls in Lahore"
+        description="At Durr-e-Rehmat Foundation, we provide comprehensive residential care for orphan girls in Lahore. Our services encompass education, healthcare, nutrition, shelter, and skills development. We believe every orphan girl deserves the chance to grow into a self-sufficient and confident member of society, making a positive contribution to Pakistan."
         image="/images/services.jpg"
-        quote="Together, we can build a world where everyone has the opportunity to thrive and succeed."
+        quote="Every child deserves a safe home, quality education, and the opportunity to thrive."
       />
       <Services />
       <Impact />

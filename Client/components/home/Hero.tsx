@@ -64,7 +64,9 @@ const Hero = () => {
                 />
               </div>
               <h2 className="text-2xl font-extrabold lg:text-3xl">SPONSOR</h2>
-              <h3 className="mb-2 text-lg font-medium lg:text-xl">a daughter</h3>
+              <h3 className="mb-2 text-lg font-medium lg:text-xl">
+                a daughter
+              </h3>
               <p className="text-sm font-light">
                 Support a child&apos;s education, food, and medical needs.
               </p>
@@ -85,7 +87,9 @@ const Hero = () => {
                 />
               </div>
               <h2 className="text-2xl font-extrabold lg:text-3xl">BECOME</h2>
-              <h3 className="mb-2 text-lg font-medium lg:text-xl">a volunteer</h3>
+              <h3 className="mb-2 text-lg font-medium lg:text-xl">
+                a volunteer
+              </h3>
               <p className="text-sm font-light">
                 Join our team of dedicated volunteers making a difference.
               </p>
@@ -106,9 +110,11 @@ const Hero = () => {
                 />
               </div>
               <h2 className="text-2xl font-extrabold lg:text-3xl">DONATE</h2>
-              <h3 className="mb-2 text-lg font-medium lg:text-xl">& fundraise</h3>
+              <h3 className="mb-2 text-lg font-medium lg:text-xl">
+                for a cause
+              </h3>
               <p className="text-sm font-light">
-                Make a donation or start your own fundraiser for the cause.
+                Give Zakat, Sadaqah, Fitrana, Fidya, or Kaffara
               </p>
             </button>
           </div>
@@ -173,9 +179,9 @@ const Hero = () => {
               />
             </div>
             <h2 className="text-2xl font-extrabold">DONATE</h2>
-            <h3 className="mb-2 text-xl font-medium">& fundraise</h3>
+            <h3 className="mb-2 text-xl font-medium">for a cause</h3>
             <p className="text-sm font-light">
-              Make a donation or start your own fundraiser for the cause.
+              Give Zakat, Sadaqah, Fitrana, Fidya, or Kaffara.
             </p>
           </button>
         </div>

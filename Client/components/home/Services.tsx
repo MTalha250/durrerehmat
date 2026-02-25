@@ -13,8 +13,8 @@ const Services = () => {
       image: false,
       title: "Education",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "In-house religious and secular education at all levels, with funding for higher education at external institutions.",
+      link: "/services",
     },
     {
       image: true,
@@ -22,17 +22,17 @@ const Services = () => {
     },
     {
       image: false,
-      title: "Education",
+      title: "Healthcare",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Regular medical check-ups, vaccinations, and emergency care to ensure the health and well-being of every girl.",
+      link: "/services",
     },
     {
       image: false,
-      title: "Education",
+      title: "Nutrition",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Three nutritious daily meals and balanced nutrition plans to support healthy growth and development.",
+      link: "/services",
     },
     {
       image: true,
@@ -40,10 +40,10 @@ const Services = () => {
     },
     {
       image: false,
-      title: "Education",
+      title: "Residential Care",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "24/7 care and supervision by experienced mother-maids in a safe, nurturing residential environment.",
+      link: "/services",
     },
     {
       image: true,
@@ -55,10 +55,10 @@ const Services = () => {
     },
     {
       image: false,
-      title: "Education",
+      title: "Skills Training",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Life skills and vocational training to help girls become self-sufficient and confident members of society.",
+      link: "/services",
     },
     {
       image: true,
@@ -66,10 +66,10 @@ const Services = () => {
     },
     {
       image: false,
-      title: "Education",
+      title: "Social Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Character building, community integration, and extracurricular activities in our recreation area.",
+      link: "/services",
     },
   ];
   const services2 = [
@@ -81,16 +81,16 @@ const Services = () => {
       image: false,
       title: "Education",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "In-house religious and secular education with higher education funding for capable girls.",
+      link: "/services",
       side: "right",
     },
     {
       image: false,
-      title: "Education",
+      title: "Healthcare",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Regular medical check-ups, vaccinations, and emergency care for every girl.",
+      link: "/services",
       side: "left",
     },
     {
@@ -103,18 +103,18 @@ const Services = () => {
     },
     {
       image: false,
-      title: "Education",
+      title: "Nutrition",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Three nutritious daily meals and balanced nutrition for healthy growth.",
+      link: "/services",
       side: "right",
     },
     {
       image: false,
-      title: "Education",
+      title: "Residential Care",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "24/7 supervision by experienced mother-maids in a safe environment.",
+      link: "/services",
       side: "left",
     },
     {
@@ -127,18 +127,18 @@ const Services = () => {
     },
     {
       image: false,
-      title: "Education",
+      title: "Skills Training",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Life skills and vocational training for self-sufficiency.",
+      link: "/services",
       side: "right",
     },
     {
       image: false,
-      title: "Education",
+      title: "Social Development",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.",
-      link: "/services/education",
+        "Character building and community integration activities.",
+      link: "/services",
       side: "left",
     },
     {

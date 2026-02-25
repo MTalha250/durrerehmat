@@ -13,9 +13,7 @@ import {
   Mail,
   Phone,
   Home,
-  Megaphone,
   Heart,
-  MessageSquare,
   Banknote,
   Check,
 } from "lucide-react";
@@ -62,8 +60,6 @@ const DonationModal = ({ isOpen, onClose }: DonationModalProps) => {
     donationType: "",
     inKindDetails: "",
     amount: "",
-    interestedInFundraiser: false,
-    fundraiserDetails: "",
   });
 
   const handleChange = (
@@ -112,8 +108,6 @@ const DonationModal = ({ isOpen, onClose }: DonationModalProps) => {
             donationType: "",
             inKindDetails: "",
             amount: "",
-            interestedInFundraiser: false,
-            fundraiserDetails: "",
           });
         }, 3000);
       }
@@ -363,71 +357,6 @@ const DonationModal = ({ isOpen, onClose }: DonationModalProps) => {
                 placeholder="Your address"
               />
             </div>
-          </div>
-        </div>
-
-        {/* Fundraiser Section */}
-        <div
-          className={`overflow-hidden rounded-2xl border-2 transition-all duration-300 ${
-            formData.interestedInFundraiser
-              ? "border-amber-300 bg-gradient-to-br from-amber-50 to-orange-50"
-              : "border-gray-100 bg-gray-50"
-          }`}
-        >
-          <div className="p-5">
-            <div className="flex items-start gap-4">
-              <button
-                type="button"
-                onClick={() =>
-                  setFormData({
-                    ...formData,
-                    interestedInFundraiser: !formData.interestedInFundraiser,
-                  })
-                }
-                className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border-2 transition-all ${
-                  formData.interestedInFundraiser
-                    ? "border-amber-500 bg-amber-500 text-white"
-                    : "border-gray-300 bg-white"
-                }`}
-              >
-                {formData.interestedInFundraiser && <Check className="h-4 w-4" />}
-              </button>
-              <div className="flex-1">
-                <div className="flex items-center gap-2">
-                  <Megaphone
-                    className={`h-5 w-5 ${
-                      formData.interestedInFundraiser
-                        ? "text-amber-600"
-                        : "text-gray-400"
-                    }`}
-                  />
-                  <span className="font-semibold text-gray-800">
-                    I&apos;m interested in starting a fundraiser
-                  </span>
-                </div>
-                <p className="mt-1 text-sm text-gray-600">
-                  Create your own fundraiser campaign to help raise funds for
-                  the orphanage
-                </p>
-              </div>
-            </div>
-
-            {formData.interestedInFundraiser && (
-              <div className="mt-4 animate-fadeIn">
-                <label className="mb-2 flex items-center gap-2 text-sm font-medium text-gray-700">
-                  <MessageSquare className="h-4 w-4 text-gray-400" />
-                  Tell us about your fundraiser idea
-                </label>
-                <textarea
-                  name="fundraiserDetails"
-                  value={formData.fundraiserDetails}
-                  onChange={handleChange}
-                  rows={3}
-                  className="w-full rounded-xl border-2 border-amber-200 bg-white px-4 py-3 transition-all focus:border-amber-400 focus:outline-none focus:ring-4 focus:ring-amber-500/10"
-                  placeholder="Describe the fundraiser you'd like to organize (e.g., charity run, bake sale, online campaign)..."
-                />
-              </div>
-            )}
           </div>
         </div>
 

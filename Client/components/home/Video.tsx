@@ -21,15 +21,13 @@ const Video = () => {
           Helping Hands for Everyone
         </h1>
         <p className="text-zinc-500 lg:text-lg">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-          vero voluptatibus quia reprehenderit maxime, amet quidem ipsa expedita
-          obcaecati sed magni velit fugiat pariatur nam nesciunt quasi delectus
-          cumque. Fugiat. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Alias quasi a nemo id voluptatibus minus ipsum quidem beatae non
-          animi dolores cumque, soluta iste suscipit vero ducimus nihil possimus
-          maxime. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos,
-          eum. Laboriosam voluptates quos voluptate nobis alias ad sit non
-          corrupti,
+          At Durr-e-Rehmat, our girls are under 24-hour care and supervision of
+          experienced mother-maids who look after their day-to-day needs. Our
+          in-house school provides both religious and secular education at all
+          levels, enabling girls to excel academically. Those who are capable are
+          funded for higher education at external institutions. The residential
+          facilities include dormitories, staff accommodation, a teaching block,
+          dining hall, and recreation area.
         </p>
       </div>
     </div>
