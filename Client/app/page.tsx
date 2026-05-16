@@ -7,11 +7,13 @@ import React from "react";
 import Video from "@/components/home/Video";
 import Blogs from "@/components/home/Blogs";
 import FeaturedFamilies from "@/components/families/FeaturedFamilies";
+import Announcements from "@/components/home/Announcements";
 
 const Home = () => {
   return (
     <div>
       <Hero />
+      <Announcements />
       <About
         subTitle="About Us"
         title="Caring for Orphan Girls in Lahore"
