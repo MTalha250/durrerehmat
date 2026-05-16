@@ -95,12 +95,13 @@ const Announcements = () => {
       >
         <div className="flex flex-col lg:flex-row">
           {/* Image panel */}
-          <div className="relative h-72 w-full shrink-0 lg:h-auto lg:w-2/5 xl:w-1/3">
+          <div className="relative w-full shrink-0 bg-amber-50 lg:w-2/5 xl:w-1/3">
             <Image
               src={ann.image}
               alt={ann.imageAlt}
-              fill
-              className="object-cover"
+              width={600}
+              height={800}
+              className="h-auto w-full object-contain"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
             {/* Overlay badge */}
